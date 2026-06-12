@@ -1,0 +1,25 @@
+Monolithic vs. Microservices Architectures: A Summary of Key Differences
+
+Monolithic Applications:
+*   Structure: A single, unified codebase where all components (UI, business logic, data access) are tightly coupled and run as one process.
+*   Development: Often simpler and faster to start for small applications.
+*   Deployment: Deployed as a single, indivisible unit.
+*   Scalability: Difficult to scale specific parts; the entire application must be scaled, leading to inefficient resource use.
+*   Maintainability: Can become complex and difficult to maintain as the application grows, leading to "big ball of mud" syndrome.
+*   Technology Stack: Typically uses a single technology stack across the entire application.
+*   Resilience: A failure in any part of the application can bring down the entire system.
+*   Team Structure: Often requires larger teams to work on a single codebase, potentially leading to coordination overhead.
+
+Microservices Architectures:
+*   Structure: Composed of small, independent, loosely coupled services, each running in its own process and communicating via lightweight mechanisms (e.g., APIs).
+*   Development: Can be more complex to set up initially due to distributed nature, but enables faster development cycles for large applications as teams work independently on services.
+*   Deployment: Services can be deployed independently, allowing for continuous delivery and faster updates.
+*   Scalability: Highly scalable; individual services can be scaled up or down based on demand, optimizing resource utilization.
+*   Maintainability: Easier to maintain and understand individual services due to their smaller size and focused functionality.
+*   Technology Stack: Allows for technology diversity; different services can use different programming languages, databases, and frameworks.
+*   Resilience: More resilient; a failure in one service typically does not affect the availability of other services.
+*   Team Structure: Supports small, autonomous teams (often called "two-pizza teams") responsible for specific services, fostering agility.
+*   Complexity: Introduces operational complexity related to distributed systems, inter-service communication, data consistency, monitoring, and debugging.
+
+Main Differences:
+The fundamental difference lies in their structure and coupling. Monoliths are single, tightly integrated units, while microservices are collections of small, independent, loosely coupled services. This impacts scalability, maintainability, deployment flexibility, technology choice, and resilience. While monoliths offer initial simplicity, microservices provide greater agility, scalability, and fault isolation at the cost of increased operational complexity.
